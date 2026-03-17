@@ -13,8 +13,8 @@ import {
   Zap
 } from 'lucide-react';
 
-// API 配置
-const API_BASE = 'http://43.159.37.10:8000';
+// API 配置 - 使用相对路径，让 Nginx 处理代理
+const API_BASE = '/api';
 
 // 文件类型图标
 const FileIcon = ({ type }) => {

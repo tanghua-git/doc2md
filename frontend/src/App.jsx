@@ -114,7 +114,7 @@ function App() {
         results.push({
           ...fileItem,
           status: 'completed',
-          downloadUrl: convertRes.data.download_url,
+          downloadUrl: `${API_BASE}${convertRes.data.download_url}`,
           markdownContent: convertRes.data.content
         });
 
